@@ -7,58 +7,58 @@ Requires PHP: 7.0
 Stable tag: 1.1.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
+Donate link: https://yblog.org
 
-完全禁用 WordPress 網站的所有留言功能，包括 REST API、XML-RPC 與 RSS Feed。
+Completely disable all comment features in WordPress, including REST API, XML-RPC, and feeds.
 
 == Description ==
 
-「Disable All Comments」是一個簡單而高效的外掛，它能夠完全禁用 WordPress 網站上的所有 WordPress 官方版本程式中預設的留言功能。
+"Disable All Comments" is a lightweight and high-performance WordPress plugin that completely disables all standard comment features across your website.
 
-主要功能：
+Key Features:
 
-* 禁用所有文章類型的留言支援（文章、頁面與自訂文章類型）
-* 關閉所有現有文章的留言功能
-* 隱藏所有已存在的留言，不影響資料庫數據
-* 阻擋直接發送到 wp-comments-post.php 的 POST 請求（回應 403 Forbidden）
-* 移除 REST API 中的留言端點（/wp/v2/comments）
-* 停用 XML-RPC 的留言相關方法（如 wp.newComment）
-* 將留言 RSS Feeds 導向至首頁，並移除 Pingback 標頭與連結
-* 移除管理選單、管理工具列、儀表板小工具以及列表中的留言欄位
+* Disable comment and trackback support from all post types (posts, pages, and custom post types).
+* Hide existing comments from rendering on frontend templates.
+* Block direct HTTP POST requests to wp-comments-post.php (returns 403 Forbidden).
+* Remove comment endpoints from WordPress REST API (/wp/v2/comments).
+* Disable comment-related XML-RPC methods (like wp.newComment).
+* Redirect comment RSS feeds to homepage and remove Pingback headers and links.
+* Clean up the admin dashboard (hide Comments menu, admin bar node, widget, and columns).
 
-此外掛適合：
+This plugin is perfect for:
 
-* 不需要留言功能的公司網站或產品展示網站
-* 使用第三方留言系統的部落格（如 Facebook 留言小工具、Disqus 等）
-* 需要完全關閉留言功能以減少垃圾訊息與提升效能的網站
+* Corporate or portfolio websites that do not require comment functionalities.
+* Blogs using third-party comment systems (such as Facebook Comments or Disqus).
+* Webmasters looking to eliminate comment spam and improve server performance.
 
 == Installation ==
 
-1. 將 'disable-all-comments' 目錄上傳至 '/wp-content/plugins/' 目錄，或直接在後台安裝
-2. 在 WordPress 的「外掛」選單中啟用外掛
-3. 啟用後，所有留言功能將立即被禁用
+1. Upload the 'disable-all-comments' folder to the '/wp-content/plugins/' directory, or install directly through the WordPress admin panel.
+2. Activate the plugin through the 'Plugins' menu.
+3. Upon activation, all comment functionalities will be instantly disabled globally.
 
 == Frequently Asked Questions ==
 
-= 此外掛會刪除我資料庫中的留言嗎？ =
+= Will this plugin delete my existing comments from the database? =
 
-不會。此外掛只會隱藏和禁用留言功能，但不會刪除資料庫中已有的留言數據。
+No. This plugin only disables and hides comment features. It does not modify or delete any comment data from your database.
 
-= 停用此外掛後，留言功能會恢復嗎？ =
+= Will comments function again if I deactivate the plugin? =
 
-是的。停用此外掛後，WordPress 的原生留言功能將會恢復。
+Yes. Deactivating the plugin restores all WordPress default comment behaviors.
 
-= 這個外掛與其他外掛相容嗎？ =
+= Is this plugin compatible with other plugins? =
 
-此外掛與大多數 WordPress 主題和外掛相容。
+Yes, this plugin is compatible with most WordPress themes and plugins.
 
 == Changelog ==
 
 = 1.1.0 =
-* 新增：完整阻擋直接 POST 至 wp-comments-post.php 的功能
-* 新增：停用 REST API 留言端點與 XML-RPC 留言方法
-* 新增：移除 Pingback 標頭與連結，留言 feeds 重新導向
-* 優化：移除 register_uninstall_hook 改用標準 uninstall.php 進行清理
-* 優化：程式碼重構與繁體中文/英文語系標準化
+* New: Complete block of direct POST requests to wp-comments-post.php
+* New: Disable REST API comment endpoints and XML-RPC comment methods
+* New: Remove Pingback headers/links and redirect comment feeds
+* Optimize: Cleaned up activation/uninstall hooks using a standard uninstall.php
+* Optimize: Code refactoring and localization formatting (En/Zh-TW)
 
 = 1.0.0 =
-* 初始版本發布
+* Initial release

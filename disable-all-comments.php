@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Disable All Comments
- * Plugin URI: https://github.com/ivanusto/disable-all-comments
+ * Plugin URI: https://yblog.org
  * Description: Completely disable all comment features in WordPress, including REST API, XML-RPC, and feeds. / 完全禁用 WordPress 網站的所有留言功能，包括 REST API、XML-RPC 與 RSS Feed。
  * Version: 1.1.0
  * Author: Ivan Lin
