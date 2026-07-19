@@ -10,6 +10,8 @@
  * License URI: https://www.apache.org/licenses/LICENSE-2.0
  * Text Domain: disable-all-comments
  * Domain Path: /languages
+ * Requires at least: 4.7
+ * Tested up to: 7.0
  */
 
 // Exit if accessed directly.
