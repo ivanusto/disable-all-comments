@@ -28,6 +28,10 @@
 ### 停用外掛後，留言功能會恢復嗎？
 會的。一旦停用此功能，WordPress 原生的留言功能將立即恢復正常運作。
 
+## 相關專案
+
+本外掛是 [Omni Webmaster & SEO Suite](https://github.com/ivanusto/omni-webmaster-seo-suite) 的六個起源專案之一——該套件整合並最佳化作者的多個獨立外掛，並額外加入 Meta Pixel 追蹤與文章數據匯出功能。
+
 ## 授權條款
 
 本專案採用 Apache License 2.0 授權。詳情請參閱 [LICENSE](LICENSE) 檔案。

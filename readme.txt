@@ -31,6 +31,8 @@ This plugin is perfect for:
 * Blogs using third-party comment systems (such as Facebook Comments or Disqus).
 * Webmasters looking to eliminate comment spam and improve server performance.
 
+This plugin is one of the origin projects of Omni Webmaster & SEO Suite, an all-in-one webmaster toolkit by the same author that consolidates and optimizes these standalone plugins: https://github.com/ivanusto/omni-webmaster-seo-suite
+
 == Installation ==
 
 1. Upload the 'disable-all-comments' folder to the '/wp-content/plugins/' directory, or install directly through the WordPress admin panel.

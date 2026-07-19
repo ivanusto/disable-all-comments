@@ -32,6 +32,8 @@ Donate link: https://yblog.org
 * 使用第三方留言系統的部落格（如 Facebook 留言小工具、Disqus 等）
 * 需要完全關閉留言功能以減少垃圾訊息與提升效能的網站
 
+本外掛是 Omni Webmaster & SEO Suite（同作者整合最佳化多個獨立外掛的一站式站長工具套件）的起源專案之一：https://github.com/ivanusto/omni-webmaster-seo-suite
+
 == Installation ==
 
 1. 將 'disable-all-comments' 目錄上傳至 '/wp-content/plugins/' 目錄，或直接在後台安裝
