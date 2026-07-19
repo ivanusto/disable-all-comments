@@ -2,7 +2,7 @@
 Contributors: ivanlin
 Tags: comments, disable comments, remove comments, spam, security
 Requires at least: 4.7
-Tested up to: 6.5
+Tested up to: 6.7
 Requires PHP: 7.0
 Stable tag: 1.1.0
 License: Apache-2.0

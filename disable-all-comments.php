@@ -23,9 +23,6 @@ class Disable_All_Comments {
      * Constructor
      */
     public function __construct() {
-        // Load text domain
-        add_action('init', array($this, 'load_textdomain'));
-
         // Disable comments support on init
         add_action('init', array($this, 'disable_comments_support'));
         
@@ -72,13 +69,6 @@ class Disable_All_Comments {
         register_deactivation_hook(__FILE__, array($this, 'plugin_deactivation'));
     }
 
-    /**
-     * Load translation files
-     */
-    public function load_textdomain() {
-        load_plugin_textdomain('disable-all-comments', false, dirname(plugin_basename(__FILE__)) . '/languages');
-    }
-    
     /**
      * Disable comment support for all post types
      */
@@ -138,7 +128,8 @@ class Disable_All_Comments {
      */
     public function block_comments_post() {
         global $pagenow;
-        if ($pagenow === 'wp-comments-post.php' || strpos($_SERVER['REQUEST_URI'], 'wp-comments-post.php') !== false) {
+        $request_uri = isset($_SERVER['REQUEST_URI']) ? esc_url_raw(wp_unslash($_SERVER['REQUEST_URI'])) : '';
+        if ($pagenow === 'wp-comments-post.php' || strpos($request_uri, 'wp-comments-post.php') !== false) {
             wp_die(
                 esc_html__('Comments are closed on this site.', 'disable-all-comments'),
                 esc_html__('Comments Disabled', 'disable-all-comments'),
