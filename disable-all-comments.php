@@ -6,7 +6,7 @@
  * Version: 1.1.0
  * Author: Ivan Lin
  * Author URI: https://yblog.org
- * License: Apache-2.0
+ * License: GPLv2 or later
  * License URI: https://www.apache.org/licenses/LICENSE-2.0
  * Text Domain: disable-all-comments
  * Domain Path: /languages
